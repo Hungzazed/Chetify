@@ -1,0 +1,165 @@
+.footer {
+  background-color: #131212;
+  padding: 60px 0 20px;
+  margin-top: auto;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-section h3 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.footer-section p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-section ul li a:hover {
+  color: #ff385c;
+  opacity: 1;
+}
+
+.email-signup {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.email-signup input {
+  flex: 1;
+  padding: 12px 20px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.email-signup button {
+  padding: 4px 25px;
+  background-color: #ff385c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.email-signup button:hover {
+  background-color: #e6324f;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-links span {
+  color: #ffffff;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ff385c;
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 0 15px;
+  }
+
+  .email-signup {
+    flex-direction: column;
+  }
+
+  .email-signup input,
+  .email-signup button {
+    width: 100%;
+  }
+} 

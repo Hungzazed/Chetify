@@ -1,0 +1,131 @@
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1020;
+}
+
+.dialog {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  width: 95%;
+  max-width: 650px;
+  height: 700px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+  line-height: 1;
+  z-index: 2;
+}
+
+.dialog-content {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.dialog-content h2 {
+  color: #ff4081;
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+}
+
+.dialog-content p {
+  color: #666;
+  margin-bottom: 32px;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dialog-image {
+  margin: 24px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dialog-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 32px auto 24px;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.dots {
+  display: flex;
+  gap: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #ff4081;
+  width: 28px;
+  border-radius: 5px;
+}
+
+.next-button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 14px 48px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #e91e63;
+  transform: translateX(5px);
+}
+
+.skip-button {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.skip-button:hover {
+  color: #333;
+}
