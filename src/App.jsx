@@ -58,11 +58,6 @@ function App() {
               path="/about"
               element={<AboutUs user={user} onLoginClick={handleLoginClick} />}
             />
-            <Route
-              path="/recipe-box"
-              element={user ? <RecipeBox /> : <Navigate to="/" replace />}
-            />
-            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
           <Dialog isOpen={isDialogOpen} onClose={() => setIsDialogOpen(false)} />
