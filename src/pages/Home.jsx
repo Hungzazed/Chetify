@@ -49,7 +49,7 @@ const Home = () => {
             />
             <span>Salad Caprese</span> 
           </div>
-          <Link to={`/cooking-guide/`} className="view-now">View now →</Link>
+          <Link to={`/cooking-guide/`} className="view-now text-decoration-none">View now →</Link>
         </div>
       </section>
 
@@ -77,7 +77,7 @@ const Home = () => {
       </section>
 
       {/* Video Recipes Section */}
-      <section className="recipes-section pt-2">
+      <section className="recipes-section pt-5">
         <div className="section-header">
           <h2 style={{ color: "#ff4081" }}>Recipes With Videos</h2>
           <p>Cooking Up Culinary Creations with Step-by-Step Videos</p>
@@ -98,7 +98,7 @@ const Home = () => {
       </section>
 
       {/* Editor's Pick Section */}
-      <section className="editors-pick pt-2">
+      <section className="editors-pick pt-5">
         <div className="section-header">
           <h2 style={{ color: "#ff4081" }}>Editor's pick</h2>
           <p>

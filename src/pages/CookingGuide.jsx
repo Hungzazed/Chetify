@@ -107,7 +107,7 @@ const CookingGuide = () => {
       </nav>
 
       <Row className='mb-5'>
-        <Col lg={5} md={12}>
+        <Col lg={6} md={12}>
            <h2 className='fw-bold mt-4'>How to make a Strawberry Shortcake</h2>
           <p className='mt-3'>
             It seems like there may be a misunderstanding. If you're asking how a user can make a Strawberry Shortcake, the process would be identical to the recipe I shared earlier. It involves preparing the strawberries, making the shortcakes, preparing whipped cream, and finally assembling the shortcake.
@@ -150,7 +150,7 @@ const CookingGuide = () => {
             </Button>
           </div>
         </Col>
-        <Col lg={5} md={12}>
+        <Col lg={6} md={12}>
           <img src={img1} alt="Strawberry Shortcake" className='w-100 rounded-4 mt-4' />
 
           <div className='mt-5'>
