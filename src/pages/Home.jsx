@@ -35,9 +35,11 @@ const Home = () => {
       <section className="hero">
         <div className="recipe-card">
           <span className="recipe-tag">Recipe of the day</span>
-          <h2 style={{ color: "#ff4081" }}>{foods[0]?.title || "Loading..."}</h2>
+          <h2 style={{ color: "#ff4081" }}>{foods[0].title}</h2>
           <p>
-            {foods[0]?.description || "Loading description..."}
+          Classic Italian Salad Caprese: ripe tomatoes, fresh
+          mozzarella, herbs, olive oil, and balsamic vinegar
+          create a refreshing dish for lunch or appetizer.
           </p>
           <div className="recipe-author">
             <img
@@ -45,7 +47,7 @@ const Home = () => {
               alt="Author"
               className="author-avatar"
             />
-            <span>{foods[0]?.author || "Loading..."}</span>
+            <span>Salad Caprese</span> 
           </div>
           <Link to={`/cooking-guide/`} className="view-now">View now →</Link>
         </div>

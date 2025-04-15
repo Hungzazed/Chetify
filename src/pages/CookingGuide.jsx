@@ -113,7 +113,7 @@ const CookingGuide = () => {
             It seems like there may be a misunderstanding. If you're asking how a user can make a Strawberry Shortcake, the process would be identical to the recipe I shared earlier. It involves preparing the strawberries, making the shortcakes, preparing whipped cream, and finally assembling the shortcake.
           </p>
 
-          <div className='border rounded-3 shadow-lg p-4'>
+          <div className='border rounded-3 p-4'>
             <div className='d-flex align-items-center justify-content-between mt-1 ms-2'>
                 <div>
                     <img src={avt} alt="" className='rounded-circle' />
